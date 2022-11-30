@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
@@ -15,7 +14,7 @@ import VetPets from './Pages/VetPets'
 import AddPet from './Pages/AddPet'
 
 
-function App() {
+function AppComponent() {
 
   return (
     <Routes>
@@ -35,4 +34,4 @@ function App() {
   )
 }
 
-export default App
+export default AppComponent
