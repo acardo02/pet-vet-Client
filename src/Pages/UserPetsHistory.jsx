@@ -16,7 +16,7 @@ function UserPetsHistory () {
 
     const fetchAppointments = async () => {
         try{
-            const { data } = await axios.get("/appointments")
+            const { data } = await axios.get("https://api-petvet-production.up.railway.app/appointments")
             setAppointments(data.appointments);
         }catch (error) {
             toast.error("Error inesperado");
@@ -25,7 +25,7 @@ function UserPetsHistory () {
 
     const fetchPets = async () => {
         try {
-            const { data } = await axios.get("/pets");
+            const { data } = await axios.get("https://api-petvet-production.up.railway.app/pets");
             setPets(data.pets);
         }catch (error) {
             toast.error("Error inesperado");
